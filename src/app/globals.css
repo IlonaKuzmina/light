@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --light: #cae7ea;
+  --primary: #00ff00;
+  --text-dark: #211f27;
+  --text-light: #cae7ea;
+  --card-bg: #211f27;
+
+  --primary-dark: #00cc00;
+  --accent-purple: #8b3ba8;
+  --accent-magenta: #d01b7f;
+
+  --border-gray: #333333;
+
+  /* scroll-padding-top: 80px; */
+}
+
+@theme {
+  --tracking-1: 0.02em;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-light: var(--light);
+  --color-dark: var(--text-dark);
+  --color-card: var(--card-bg);
+
+  --font-jakarta: var(--font-plus-jakarta-sans);
+  --font-bartle: var(--font-bbh-sans-bartle);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--card-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--light);
+  border-radius: 50px;
+  transition: all 3s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+@layer base {
+  .linear-bg {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1920px !important;
+    min-width: unset !important;
+    @apply mx-auto w-full px-5 lg:px-10 xl:px-16 2xl:px-5;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-4xl md:text-5xl xl:text-[64px] text-dark font-bartle uppercase leading-7 sm:leading-10 md:leading-14 xl:leading-20;
+  }
+
+  .section-top-padding {
+    @apply py-16 md:py-[150px];
+  }
+}
