@@ -1,9 +1,9 @@
-import SmallHero from "@/src/components/SmallHero";
+
 
 export default function Terms() {
   return (
     <main className="container">
-      <SmallHero title={"Terms and Conditions"} bgImage={"/policy-hero.jpg"} />
+      {/* <SmallHero title={"Terms and Conditions"} bgImage={"/policy-hero.jpg"} /> */}
 
       <section className="space-y-6 mt-8 md:mt-10 px-3 md:px-6">
         <div>

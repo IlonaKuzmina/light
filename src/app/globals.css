@@ -30,14 +30,14 @@
   --color-dark: var(--text-dark);
   --color-card: var(--card-bg);
 
-  --font-jakarta: var(--font-plus-jakarta-sans);
-  --font-bartle: var(--font-bbh-sans-bartle);
+  --font-jakarta: var(--font-plus-jakarta-sans), sans-serif;
+  --font-bartle: var(--font-bbh-sans-bartle), sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-plus-jakarta-sans), sans-serif;
+  font-family: var(--font-plus-jakarta-sans);
 }
 
 html {
@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .section-title {
-    @apply text-2xl sm:text-4xl md:text-5xl xl:text-[64px] text-dark font-bartle uppercase leading-7 sm:leading-10 md:leading-14 xl:leading-20;
+    @apply text-dark font-bartle text-2xl leading-7 uppercase sm:text-4xl sm:leading-10 md:text-5xl md:leading-14 xl:text-[64px] xl:leading-20;
   }
 
   .section-top-padding {
