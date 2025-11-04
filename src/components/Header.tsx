@@ -67,32 +67,32 @@ export default function Header() {
               <path
                 d="M74.5159 6.16839L72.4897 0H88.9013L86.8751 6.16839H74.5159Z"
                 fill="black"
-                className="group-hover:fill-dark group-hover:duration-300"
+                className="group-hover:animate-pulse group-hover:duration-300"
               />
 
               <path
                 d="M87.5957 6.88879L93.7641 4.86267V21.2742L87.5957 19.2481V6.88879Z"
                 fill="black"
-                className="group-hover:fill-dark group-hover:duration-300"
+                className="group-hover:animate-pulse group-hover:duration-300"
               />
 
               <path
                 d="M86.8751 19.9685L88.9013 26.1369H72.4897L74.5159 19.9685H86.8751Z"
                 fill="black"
-                className="group-hover:fill-dark group-hover:duration-300"
+                className="group-hover:animate-pulse group-hover:duration-300"
               />
 
               <path
                 d="M73.7956 19.2481L67.6272 21.2742V4.86267L73.7956 6.88879V19.2481Z"
                 fill="black"
-                className="group-hover:fill-dark group-hover:duration-300"
+                className="group-hover:animate-pulse group-hover:duration-300"
               />
               <circle
                 cx="80.6956"
                 cy="13.0684"
                 r="4.29811"
                 fill="#51FF48"
-                className="group-hover:fill-light group-hover:duration-300"
+                className="group-hover:animate-pulse group-hover:duration-300"
               />
             </svg>
           </Link>
@@ -100,19 +100,19 @@ export default function Header() {
 
         <nav className="hidden items-center gap-8 lg:flex lg:gap-12">
           <Link
-            href="#work-with"
+            href="/#work-with"
             className="hover:text-primary text-xl font-semibold text-black transition-colors"
           >
             WHO WE HELP
           </Link>
           <Link
-            href="#equipment"
+            href="/#equipment"
             className="hover:text-primary text-xl font-semibold text-black transition-colors"
           >
             EQUIPMENT
           </Link>
           <Link
-            href="#why-us"
+            href="/#why-us"
             className="hover:text-primary text-xl font-semibold text-black transition-colors"
           >
             WHY US
@@ -154,20 +154,23 @@ export default function Header() {
         {isNavVisible && (
           <nav className="bg-background fixed top-[82px] right-0 bottom-0 left-0 z-[100] flex h-screen flex-col items-center gap-8 pt-[70px] lg:hidden">
             <Link
+              onClick={() => setIsNavVisible(false)}
               href="#work-with"
-              className="hover:text-primary text-xl font-semibold text-light transition-colors"
+              className="hover:text-primary text-light text-xl font-semibold transition-colors"
             >
               WHO WE HELP
             </Link>
             <Link
+              onClick={() => setIsNavVisible(false)}
               href="#equipment"
-              className="hover:text-primary text-xl font-semibold text-light transition-colors"
+              className="hover:text-primary text-light text-xl font-semibold transition-colors"
             >
               EQUIPMENT
             </Link>
             <Link
+              onClick={() => setIsNavVisible(false)}
               href="#why-us"
-              className="hover:text-primary text-xl font-semibold text-light transition-colors"
+              className="hover:text-primary text-light text-xl font-semibold transition-colors"
             >
               WHY US
             </Link>

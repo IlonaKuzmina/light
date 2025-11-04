@@ -1,76 +1,22 @@
-
+import SmallHero from "@/src/components/ui/SmallHero";
 
 export default function Cookie() {
   return (
-    <main className="container">
-      {/* <SmallHero title={"Cookie Policy"} bgImage={"/policy-hero.jpg"} /> */}
+    <main className="">
+      <SmallHero title={"Cookie Policy"} />
 
-      <section className="space-y-6 mt-8 md:mt-10 px-3 md:px-6">
-        <div>
-          <p className="text">
-            This Cookie Policy explains how Q Code uses cookies and similar
-            technologies on our website.
-          </p>
-        </div>
-        <div>
-          <h2 className="h2">1. What Are Cookies?</h2>
-          <p className="text">
-            Cookies are small text files stored on your device that help us
-            improve your browsing experience and analyze traffic.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="h2">2. Types of Cookies We Use</h2>
-          <ul className="text space-y-4">
-            <li>
-              - <strong>Essential Cookies</strong>: Required for website functionality.
-            </li>
-            <li>
-              - <strong>Analytics Cookies</strong>: Help us understand how visitors interact
-              with our site.
-            </li>
-            <li>
-              - <strong>Preference Cookies</strong>: Store your preferences for future
-              visits.
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="h2">3. Managing Cookies</h2>
-          <p className="text">
-            You can control or delete cookies through your browser settings.
-            Disabling cookies may affect your experience on our site.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="h2">4. Third-Party Cookies</h2>
-          <p className="text">
-            We may use third-party services such as Google Analytics that use
-            cookies to analyze usage patterns.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="h2">5. Changes to This Policy</h2>
-          <p className="text">
-            We may update this Cookie Policy from time to time. Any changes will
-            be published on this page.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="h2">6. Contact</h2>
-          <p className="text">
-            If you have any questions about our cookie use, contact:
-            <a
-              href="mailto:cookies@qcode.dev"
-              className="text-accent transition hover:text-btnbg"
-            >
-              cookies@qcode.dev
-            </a>
+      <section className="section-top-padding border-dark border-t-3 border-b-3 bg-[#0D0C0F]">
+        <div className="container">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum
           </p>
         </div>
       </section>
