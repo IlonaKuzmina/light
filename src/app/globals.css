@@ -7,6 +7,8 @@
   --primary: #00ff00;
   --text-dark: #211f27;
   --text-light: #cae7ea;
+  --secondary-text: #706c7b;
+
   --card-bg: #211f27;
 
   --primary-dark: #00cc00;
@@ -26,6 +28,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-secondary: var(--secondary-text);
   --color-light: var(--light);
   --color-dark: var(--text-dark);
   --color-card: var(--card-bg);
@@ -87,5 +90,13 @@ body::-webkit-scrollbar-thumb:hover {
 
   .section-top-padding {
     @apply py-16 md:py-[150px];
+  }
+
+  .img-shadow {
+    border-radius: 263.906px;
+    background: rgba(255, 255, 255, 0.5);
+    filter: blur(25px);
+    height: 32.587px;
+    width: 100%;
   }
 }

@@ -1,5 +1,5 @@
 import CTASection from "../components/CTASection";
-import Equipment from "../components/Equipment";
+import Equipment from "../components/equipments/Equipment";
 import Hero from "../components/Hero";
 import WhoWeWork from "../components/WhoWeWork";
 import WhyChooseUs from "../components/WhyChooseUs";
