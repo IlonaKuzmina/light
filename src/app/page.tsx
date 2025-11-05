@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import CTASection from "../components/CTASection";
 import Equipment from "../components/equipments/Equipment";
 import Hero from "../components/Hero";
@@ -9,7 +10,15 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <WhoWeWork />
-      <Equipment />
+      <Suspense
+        fallback={
+          <div className="text-light py-10 text-center">
+            Loading equipment...
+          </div>
+        }
+      >
+        <Equipment />
+      </Suspense>
       <WhyChooseUs />
       <CTASection />
     </main>
