@@ -316,7 +316,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "17",
     name: "ARRI Signature Primes",
     category: "Lenses",
-    image: "/images/lenses/arri-signature-primes.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "LPL" },
       { label: "Focal Length Range", value: "12mm – 280mm" },
@@ -332,7 +332,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "18",
     name: "Cooke S4/i & Panchro/i Classics",
     category: "Lenses",
-    image: "/images/lenses/cooke-s4i.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "PL" },
       { label: "Focal Length Range", value: "12mm – 300mm" },
@@ -345,7 +345,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "19",
     name: "Zeiss Supreme Primes / CP.3 / Ultra Primes / Master Primes",
     category: "Lenses",
-    image: "/images/lenses/zeiss-supreme-primes.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "PL / E / EF" },
       { label: "Focal Length Range", value: "15mm – 200mm" },
@@ -361,7 +361,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "20",
     name: "Canon CN-E / L-Series / K35 Vintage",
     category: "Lenses",
-    image: "/images/lenses/canon-cne.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "EF / PL" },
       { label: "Focal Length Range", value: "14mm – 135mm" },
@@ -374,7 +374,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "21",
     name: "Sigma Cine Primes / Zooms",
     category: "Lenses",
-    image: "/images/lenses/sigma-cine.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "PL / EF / E" },
       {
@@ -393,7 +393,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "22",
     name: "DZOFilm, Meike, Atlas Orion Anamorphics",
     category: "Lenses",
-    image: "/images/lenses/atlas-orion.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "PL / EF" },
       { label: "Focal Length Range", value: "32mm – 100mm" },
@@ -406,7 +406,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "23",
     name: "Angénieux EZ / Optimo Zooms",
     category: "Lenses",
-    image: "/images/lenses/angenieux-optimo.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "PL / EF" },
       { label: "Zoom Range", value: "15–40mm / 45–135mm / 24–290mm" },
@@ -419,7 +419,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "24",
     name: "Laowa, Sirui, Viltrox, Fujinon MK / Cabrio",
     category: "Lenses",
-    image: "/images/lenses/laowa-fujinon.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Mount", value: "PL / E / EF" },
       { label: "Focal Length Range", value: "9mm – 135mm" },
@@ -437,7 +437,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "25",
     name: "ARRI Skypanel S60/S120 / Orbiter / M18 / M40",
     category: "Lighting & Grip",
-    image: "/images/lighting/arri-skypanel.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "LED & HMI Lighting Systems" },
       { label: "Power Output", value: "575W – 4000W (varies by model)" },
@@ -452,7 +452,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "26",
     name: "Aputure 600D / 600X / 1200D / Nova P600C",
     category: "Lighting & Grip",
-    image: "/images/lighting/aputure-600d.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "LED COB & Panel Lights" },
       { label: "Power Output", value: "600W – 1200W" },
@@ -467,7 +467,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "27",
     name: "Nanlite Forza / Pavotube / Mixpanel Series",
     category: "Lighting & Grip",
-    image: "/images/lighting/nanlite-forza.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "LED Tube & Panel Lights" },
       { label: "Power Output", value: "60W – 500W" },
@@ -482,7 +482,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "28",
     name: "Godox VL / SL / UL Series",
     category: "Lighting & Grip",
-    image: "/images/lighting/godox-vl.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "LED Video Lights" },
       { label: "Power Output", value: "150W – 300W" },
@@ -500,7 +500,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "29",
     name: "Astera Titan & Helios Tubes",
     category: "Lighting & Grip",
-    image: "/images/lighting/astera-titan.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Wireless RGB Tubes" },
       { label: "Battery Life", value: "Up to 20 hours" },
@@ -515,7 +515,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "30",
     name: "Grip Equipment & Accessories",
     category: "Lighting & Grip",
-    image: "/images/lighting/grip-gear.jpg",
+    image: "/placeholder.png",
     specs: [
       {
         label: "Includes",
@@ -541,7 +541,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "31",
     name: "Sound Devices / Zoom F8 / MixPre Series",
     category: "Sound & Monitoring",
-    image: "/images/sound/sound-devices.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Field Recorders & Mixers" },
       { label: "Inputs", value: "8–12 XLR/TRS combo" },
@@ -553,7 +553,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "32",
     name: "Sennheiser / Rode / Deity / DPA Microphones",
     category: "Sound & Monitoring",
-    image: "/images/sound/sennheiser-mic.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Shotgun & Lavalier Microphones" },
       { label: "Polar Pattern", value: "Cardioid / Supercardioid / Omni" },
@@ -568,7 +568,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "33",
     name: "Boom Poles, Blimps & Wireless Kits",
     category: "Sound & Monitoring",
-    image: "/images/sound/boom-pole.jpg",
+    image: "/placeholder.png",
     specs: [
       {
         label: "Included Gear",
@@ -585,7 +585,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "34",
     name: "SmallHD / Atomos / Blackmagic Monitors",
     category: "Sound & Monitoring",
-    image: "/images/sound/smallhd.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Screen Size", value: '5" – 7"' },
       { label: "Resolution", value: "Full HD / 4K (depending on model)" },
@@ -600,7 +600,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "35",
     name: "Teradek Wireless Video Systems",
     category: "Sound & Monitoring",
-    image: "/images/sound/teradek.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Wireless Video Transmitters & Receivers" },
       { label: "Range", value: "Up to 1000 ft (300m)" },
@@ -612,7 +612,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "36",
     name: "Timecode Systems (Tentacle Sync / Ambient)",
     category: "Sound & Monitoring",
-    image: "/images/sound/tentacle-sync.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Timecode Generators & Sync Devices" },
       { label: "Compatibility", value: "Camera / Audio recorders / Monitors" },
@@ -628,7 +628,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "37",
     name: "Rigging Kits, Shoulder Mounts, Rails, Cages",
     category: "Accessories & Support Gear",
-    image: "/images/accessories/rigging-kit.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Camera Rigging Systems" },
       { label: "Compatibility", value: "DSLR / Cinema / Mirrorless" },
@@ -642,7 +642,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "38",
     name: "Batteries & Power Systems (V-Mount / Gold / B-Mount)",
     category: "Accessories & Support Gear",
-    image: "/images/accessories/vmount-battery.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Power Solutions" },
       { label: "Output", value: "14.4V – 26V" },
@@ -656,7 +656,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "39",
     name: "Memory Cards & Media Readers",
     category: "Accessories & Support Gear",
-    image: "/images/accessories/memory-cards.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "CFexpress / CFast 2.0 / SDXC" },
       { label: "Capacity", value: "64GB – 2TB" },
@@ -670,7 +670,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "40",
     name: "Gimbals: DJI RS3 Pro / Ronin 2 / Freefly Movi Pro",
     category: "Accessories & Support Gear",
-    image: "/images/accessories/dji-ronin.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "3-Axis Camera Stabilizers" },
       { label: "Payload", value: "Up to 12kg" },
@@ -684,7 +684,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "41",
     name: "Drones: DJI Mavic 3 Cine / Inspire 2 / Air 3",
     category: "Accessories & Support Gear",
-    image: "/images/accessories/dji-inspire2.jpg",
+    image: "/placeholder.png",
     specs: [
       { label: "Type", value: "Aerial Cinematography Drones" },
       { label: "Camera Resolution", value: "5.1K – 8K (depending on model)" },
@@ -698,7 +698,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "42",
     name: "Cases, Carts & Transport Equipment",
     category: "Accessories & Support Gear",
-    image: "/images/accessories/case.jpg",
+    image: "/placeholder.png",
     specs: [
       {
         label: "Includes",

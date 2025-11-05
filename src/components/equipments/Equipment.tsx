@@ -1,17 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { equipmentData } from "../../utils/products";
 import Button from "../ui/Button";
 import EquipmentCard from "./EquipmentCard";
+import { useRouter, useSearchParams } from "next/navigation";
+import EquipmentCardSkeleton from "./EquipmentCardSkeleton";
 
 const Equipment = () => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const categories = Array.from(
     new Set(equipmentData.map((item) => item.category)),
   );
   const [activeCategory, setActiveCategory] = useState(categories[0]);
   const [visibleCount, setVisibleCount] = useState(8);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const categoryParam = searchParams.get("category");
+    if (categoryParam && categories.includes(categoryParam)) {
+      setActiveCategory(categoryParam);
+    }
+  }, [searchParams, categories]);
 
   const filteredEquipment = equipmentData.filter(
     (item) => item.category === activeCategory,
@@ -21,6 +33,25 @@ const Equipment = () => {
 
   const handleShowMore = () => {
     setVisibleCount((prev) => prev + 8);
+  };
+
+  // const handleCategoryClick = (category: string) => {
+  //   setActiveCategory(category);
+  //   setVisibleCount(8);
+  //   router.replace(`/?category=${encodeURIComponent(category)}#equipment`);
+  // };
+
+  const handleCategoryClick = (category: string) => {
+    if (category === activeCategory) return; // no need if same category
+    setLoading(true);
+
+    // fake delay 1-2 seconds
+    setTimeout(() => {
+      setActiveCategory(category);
+      setVisibleCount(8);
+      setLoading(false);
+      router.replace(`/?category=${encodeURIComponent(category)}#equipment`);
+    }, 1500); // 1.5s skeleton
   };
 
   return (
@@ -37,10 +68,7 @@ const Equipment = () => {
           {categories.map((category, index) => (
             <button
               key={index}
-              onClick={() => {
-                setActiveCategory(category);
-                setVisibleCount(8);
-              }}
+              onClick={() => handleCategoryClick(category)}
               className={`hover:bg-light h-10 cursor-pointer rounded-full px-4 text-base font-normal transition-all duration-300 hover:text-[#070707] ${
                 activeCategory === category
                   ? "bg-light text-[#070707]"
@@ -58,10 +86,14 @@ const Equipment = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {visibleEquipment.map((item) => (
-              <EquipmentCard key={item.id} item={item} />
-            ))}
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            {loading
+              ? Array.from({ length: 8 }).map((_, i) => (
+                  <EquipmentCardSkeleton key={i} />
+                ))
+              : visibleEquipment.map((item) => (
+                  <EquipmentCard key={item.id} item={item} />
+                ))}
           </div>
         </div>
 
@@ -70,7 +102,7 @@ const Equipment = () => {
             <Button
               variant="secondary"
               size="lg"
-               onClick={handleShowMore}
+              onClick={handleShowMore}
               icon={
                 <svg
                   width="24"

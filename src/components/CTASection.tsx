@@ -17,7 +17,7 @@ export default function CTASection() {
             Light Up Your Next Project
           </p>
 
-          <h2 className="font-bartle tracking-1 text-2xl leading-tight font-normal text-light md:text-4xl">
+          <h2 className="font-bartle tracking-1 text-xl sm:text-2xl leading-tight font-normal text-light md:text-4xl">
             <span>
               Illuminate your vision
               <br className="hidden sm:block" /> with precision{" "}

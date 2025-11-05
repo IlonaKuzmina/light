@@ -41,7 +41,7 @@ export default function WhoWeWork() {
               <br />
               WITH
             </h2>
-            <p className="text-light text-xl sm:text-2xl md:text-[32px]">
+            <p className="text-light text-lg sm:text-2xl md:text-[32px]">
               We support productions of all sizes — from small crews to full-scale cinematic shoots.
             </p>
             <Button variant="primary" size="lg" link="#equipment">
@@ -49,9 +49,9 @@ export default function WhoWeWork() {
             </Button>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 md:gap-8">
+          <div className="grid gap-6 sm:grid-cols-2 md:gap-6 lg:gap-8">
             {workItems.map((item, index) => (
-              <div key={index} className="bg-card rounded-[20px] p-6 sm:p-12">
+              <div key={index} className="bg-card rounded-[20px] p-6 md:p-8 lg:p-12">
                 <div className="mb-6 size-12 sm:mb-12 md:size-16">
                   <Image
                     src={item.icon}

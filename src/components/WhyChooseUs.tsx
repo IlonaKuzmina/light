@@ -39,15 +39,15 @@ export default function WhyChooseUs() {
               <br />
               Choose Us
             </h2>
-            <p className="text-light text-xl sm:text-2xl md:text-[32px]">
+            <p className="text-light text-lg sm:text-2xl md:text-[32px]">
               We`re passionate about storytelling through technology — and
               committed to helping you capture every frame perfectly
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 md:gap-8">
+          <div className="grid gap-6 sm:grid-cols-2  md:gap-6 lg:gap-8">
             {reasonsItems.map((item, index) => (
-              <div key={index} className="bg-card rounded-[20px] p-6 sm:p-12">
+              <div key={index} className="bg-card rounded-[20px] p-6 md:p-8 lg:p-12">
                 <div className="mb-6 size-12 sm:mb-12 md:size-16">
                   <Image
                     src={item.icon}

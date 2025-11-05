@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { categories } from "../utils/products";
+import { useRouter } from "next/navigation";
 
 interface FooterLink {
   links: { label: string; href: string }[];
@@ -16,11 +19,20 @@ const footerLinks: FooterLink[] = [
 ];
 
 export default function Footer() {
+  const router = useRouter();
+
+  const handleCategoryClick = (category: string) => {
+    router.push(`/?category=${encodeURIComponent(category)}#equipment`);
+    document
+      .querySelector("#equipment")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="section-top-padding">
       <div className="max-[1440px] container">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-          <div className="w-fit">
+          <div className="w-[130px] md:w-[150px]">
             <Link href="/" className="group">
               <svg
                 width="151"
@@ -28,6 +40,7 @@ export default function Footer() {
                 viewBox="0 0 151 80"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="w-full h-auto"
               >
                 <path
                   d="M0 41.2066V9.00488H5.90724V36.0197H19.7028V41.2066H0Z"
@@ -102,13 +115,13 @@ export default function Footer() {
 
           <div className="flex flex-col gap-6">
             {categories.map((category, index) => (
-              <Link
+              <button
                 key={index}
-                href={`#${category.id}`}
-                className="text-light hover:text-primary text-base font-bold transition-colors duration-300"
+                onClick={() => handleCategoryClick(category.label)}
+                className="text-light hover:text-primary cursor-pointer text-left text-base font-bold transition-colors duration-300"
               >
                 {category.label}
-              </Link>
+              </button>
             ))}
           </div>
 
@@ -127,7 +140,7 @@ export default function Footer() {
                 ))}
               </ul>
 
-              <p className="mt-12 text-center sm:text-start md:mt-auto text-base text-[#6D6D6D]">
+              <p className="mt-12 text-center text-base text-[#6D6D6D] sm:text-start md:mt-auto">
                 ©2023 LightShiftProduction. All rights reserved.
               </p>
             </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import Button from "./ui/Button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -13,15 +12,15 @@ export default function Header() {
   return (
     <header className="w-full bg-white">
       <div className="container flex items-center justify-between py-4 md:py-5">
-        <div className="logo-wrapper">
-          <Link href={"/"} className="group">
+        <div className="logo-wrapper w-[70px] md:w-[93px]">
+          <Link href={"/"} className="group w-fit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="94"
               height="50"
               viewBox="0 0 94 50"
               fill="none"
-              className="logo perspective-normal"
+              className="logo perspective-normal w-full h-auto"
             >
               <path
                 d="M0 25.7542V5.6281H3.69203V22.5124H12.3143V25.7542H0Z"
