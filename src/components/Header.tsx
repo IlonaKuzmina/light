@@ -121,7 +121,7 @@ export default function Header() {
         <Button
           variant="primary"
           size="sm"
-          link="mailto:info@light"
+          link="mailto:contact@lightshiftproductions.com"
           className="!hidden lg:!inline-flex"
         >
           Inquiry Form
@@ -177,7 +177,7 @@ export default function Header() {
             <Button
               variant="primary"
               size="sm"
-              link="mailto:info@light"
+              link="mailto:contact@lightshiftproductions.com"
               className=""
             >
               Inquiry Form

@@ -11,7 +11,7 @@ interface FooterLink {
 const footerLinks: FooterLink[] = [
   {
     links: [
-      { label: "Terms & Conditions", href: "/terms" },
+      // { label: "Terms & Conditions", href: "/terms" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Cookie Policy", href: "/cookie" },
     ],

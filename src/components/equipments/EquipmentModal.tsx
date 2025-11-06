@@ -17,7 +17,7 @@ const EquipmentModal = ({ item, isOpen, onClose }: EquipmentModalProps) => {
       onClick={onClose}
     >
       <div
-        className="border-dark relative max-w-10/12 rounded-[20px] border-2 bg-[#0D0C0F] p-8 md:max-w-[50%]"
+        className="border-dark relative max-h-[90vh] w-11/12 overflow-y-auto rounded-[20px] border-2 bg-[#0D0C0F] p-8 sm:max-w-10/12 md:max-w-[50%]"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -54,12 +54,15 @@ const EquipmentModal = ({ item, isOpen, onClose }: EquipmentModalProps) => {
           Technical Specifications
         </p>
 
-        <div className="space-y-8">
+        <div className="space-y-4">
           {item.specs &&
             item.specs.map((spec, i) => (
-              <div key={i} className="grid grid-cols-2 gap-8">
-                <p className="text-secondary text-base">{spec.label}</p>
-                <p className="text-light text-base font-medium uppercase">
+              <div
+                key={i}
+                className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-4"
+              >
+                <p className="text-secondary text-sm">{spec.label}</p>
+                <p className="text-light text-sm font-medium uppercase">
                   {spec.value}
                 </p>
               </div>

@@ -17,7 +17,6 @@
 
   --border-gray: #333333;
 
-  /* scroll-padding-top: 80px; */
 }
 
 @theme {
@@ -98,5 +97,13 @@ body::-webkit-scrollbar-thumb:hover {
     filter: blur(25px);
     height: 32.587px;
     width: 100%;
+  }
+
+  .link {
+    @apply text-light hover:text-primary duration-300 underline;
+  }
+
+  .h2{
+    @apply text-2xl mb-6 text-white font-medium;
   }
 }

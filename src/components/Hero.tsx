@@ -24,7 +24,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <Button variant="primary" size="lg">
+        <Button variant="primary" size="lg" link="mailto:contact@lightshiftproductions.com">
           Request a Quote
         </Button>
       </div>

@@ -29,7 +29,7 @@ export default function CTASection() {
           </h2>
         </div>
 
-        <Button variant="primary" size="lg" link={"mailto:info@light.com"}>
+        <Button variant="primary" size="lg" link={"mailto:contact@lightshiftproductions.com"}>
           Request a Quote
         </Button>
       </div>

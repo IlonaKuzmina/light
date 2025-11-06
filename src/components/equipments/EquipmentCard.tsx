@@ -45,8 +45,8 @@ const EquipmentCard = ({ item }: { item: EquipmentItem }) => {
           <Button
             variant="ghost"
             size="sm"
-            link="mailto:info@lightshift.com"
-            className="flex-1 !text-sm !capitalize py-3"
+            link="mailto:contact@lightshiftproductions.com"
+            className="flex-1 !text-sm !capitalize py-3 2xl:!px-3"
           >
             Request Pricing
           </Button>
@@ -55,7 +55,7 @@ const EquipmentCard = ({ item }: { item: EquipmentItem }) => {
             variant="outline"
             size="sm"
             onClick={() => setIsOpen(true)}
-            className="flex-1 !text-sm !capitalize py-3"
+            className="flex-1 !text-sm !capitalize py-3 2xl:!px-3"
           >
             Technical Data
           </Button>

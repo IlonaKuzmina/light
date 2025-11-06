@@ -11,7 +11,7 @@ export interface EquipmentItem {
 }
 
 export const categories = [
-  { id: "cameras", label: "Cameras", count: 13 },
+  { id: "cameras", label: "Cameras", count: 16 },
   { id: "lenses", label: "Lenses", count: 23 },
   { id: "lighting", label: "Lighting & Grip", count: 15 },
   { id: "sound", label: "Sound & Monitoring", count: 9 },
@@ -23,7 +23,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "1",
     name: "ARRI ALEXA 35",
     category: "Cameras",
-    image: "/cameras/img_1.png",
+    image: "/cameras/img_1.svg",
     specs: [
       {
         label: "Sensor Type",
@@ -50,7 +50,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "2",
     name: "BLACKMAGIC URSA MINI PRO 12K",
     category: "Cameras",
-    image: "/cameras/img_2.png",
+    image: "/cameras/img_2.svg",
     featured: true,
     specs: [
       {
@@ -76,7 +76,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "3",
     name: "RED V-RAPTOR XL",
     category: "Cameras",
-    image: "/cameras/img_3.png",
+    image: "/cameras/img_3.svg",
     specs: [
       {
         label: "Sensor Type",
@@ -100,7 +100,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "4",
     name: "SONY FX3",
     category: "Cameras",
-    image: "/cameras/img_4.png",
+    image: "/cameras/img_4.svg",
     specs: [
       {
         label: "Sensor Type",
@@ -124,7 +124,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "5",
     name: "BLACKMAGIC POCKET CINEMA CAMERA 6K PRO",
     category: "Cameras",
-    image: "/cameras/img_1.png",
+    image: "/cameras/img_5.svg",
     specs: [
       {
         label: "Sensor Type",
@@ -148,7 +148,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "6",
     name: "ARRI ALEXA MINI LF 4.5K",
     category: "Cameras",
-    image: "/cameras/img_1.png",
+    image: "/cameras/img_6.svg",
     specs: [
       {
         label: "Sensor Type",
@@ -173,7 +173,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "7",
     name: "CANON C70",
     category: "Cameras",
-    image: "/cameras/img_1.png",
+    image: "/cameras/img_7.svg",
     specs: [
       {
         label: "Sensor Type",
@@ -194,7 +194,7 @@ export const equipmentData: EquipmentItem[] = [
     id: "8",
     name: "DJI RONIN 4D",
     category: "Cameras",
-    image: "/cameras/img_1.png",
+    image: "/cameras/img_8.svg",
     specs: [
       {
         label: "Camera & Sensor",
@@ -217,11 +217,18 @@ export const equipmentData: EquipmentItem[] = [
     id: "9",
     name: "RED RANGER HELIUM 8K",
     category: "Cameras",
-    image: "/images/redHelium8k.png",
+    image: "/cameras/img_9.svg",
     specs: [
       { label: "Sensor Type", value: "HELIUM 35.4 megapixel CMOS" },
-      { label: "Sensor Resolution", value: "8192 × 4320" },
-      { label: "Frame Rates", value: "60 fps at 8K full format" },
+      {
+        label: "Sensor Resolution",
+        value: "8192 × 4320, sensor ~29.90 × 15.77 mm",
+      },
+      {
+        label: "Frame Rates",
+        value:
+          "60 fps at 8K full format; 75 fps at 8K 2.4:1; also higher in lower resolutions",
+      },
       { label: "Weight", value: "3.5–3.8 kg / 7.7–8.4 lbs" },
     ],
   },
@@ -229,36 +236,58 @@ export const equipmentData: EquipmentItem[] = [
     id: "10",
     name: "RED MONSTRO 8K VV",
     category: "Cameras",
-    image: "/images/redMonstro8k.png",
+    image: "/cameras/img_10.svg",
     specs: [
-      { label: "Sensor Type", value: "Full-frame 8K VV CMOS" },
-      { label: "Sensor Resolution", value: "8192 × 4320" },
-      { label: "Frame Rates", value: "Up to 60 fps at 8K full resolution" },
-      { label: "Weight", value: "1.9 kg / 3.8 lbs" },
+      { label: "Sensor Type", value: "40.96 x 21.6 mm (VistaVision) CMOS" },
+      {
+        label: "Sensor Maximum Number of Photosites and Size",
+        value: "35.4 Megapixel (8192 x 4320)",
+      },
+      {
+        label: "Sensor Frame Rates",
+        value: "up to 60 fps at 8K full resolution",
+      },
+      { label: "Weight", value: "1.5 kg (3.3 lbs)" },
     ],
   },
   {
     id: "11",
     name: "SONY FX6",
     category: "Cameras",
-    image: "/images/sonyFx6.png",
+    image: "/cameras/img_11.svg",
     specs: [
-      { label: "Sensor Type", value: "Full-frame Exmor R CMOS" },
-      { label: "Sensor Resolution", value: "4K 10.2MP" },
-      { label: "Frame Rates", value: "Up to 120 fps 4K (10-bit)" },
-      { label: "Weight", value: "0.89 kg (body only)" },
+      { label: "Sensor Type", value: "Full-frame Exmor CMOS" },
+      {
+        label: "Sensor Maximum Number of Photosites and Size",
+        value: "~12.8 MP effective for video (varies by mode)",
+      },
+      {
+        label: "Sensor Frame Rates",
+        value: "Up to 120 fps in full-frame, 180 fps in Super 35 crop",
+      },
+      { label: "Weight", value: "Weight: ~0.89 kg (body)" },
     ],
   },
   {
     id: "12",
     name: "SONY FX9",
     category: "Cameras",
-    image: "/images/sonyFx9.png",
+    image: "/cameras/img_12.svg",
     specs: [
-      { label: "Sensor Type", value: "Full-frame 6K Exmor R CMOS" },
+      {
+        label: "Sensor Type",
+        value:
+          "Cinema 8K sensor (in 4D rig) with integrated stabilization and lens mount system",
+      },
       {
         label: "Unique Feature",
-        value: "4-axis stabilization, Dual Base ISO, fast hybrid AF",
+        value:
+          "Z-axis motion control, 4-axis stabilization, active focus & direct lens control",
+      },
+      {
+        label: "Other",
+        value:
+          "Z-axis motion control, 4-axis stabilization, active focus & direct lens control",
       },
     ],
   },
@@ -266,49 +295,60 @@ export const equipmentData: EquipmentItem[] = [
     id: "13",
     name: "CANON EOS C300 MARK III",
     category: "Cameras",
-    image: "/images/canonC300m3.png",
+    image: "/cameras/img_13.svg",
     specs: [
-      { label: "Sensor Type", value: "Super 35mm Dual Gain Output CMOS" },
-      { label: "Sensor Resolution", value: "4096 × 2160 (4K DCI)" },
+      { label: "Sensor Type", value: "Super 35mm Dual Gain Output (DGO) CMOS" },
+      {
+        label: "Sensor Resolution",
+        value: "4608 × 3456 ≈ 16.0 MP, sensor size ~24.2 × 15.6 mm",
+      },
       { label: "Frame Rates", value: "Up to 120 fps" },
-      { label: "Lens Mount", value: "EF mount" },
-      { label: "Weight", value: "1.77 kg (body)" },
+      { label: "Weight", value: "~1.77 kg (body with battery)" },
     ],
   },
   {
     id: "14",
     name: "CANON EOS R5 C",
     category: "Cameras",
-    image: "/images/canonRsC.png",
+    image: "/cameras/img_14.svg",
     specs: [
-      { label: "Sensor Type", value: "Full-frame CMOS (Dual Pixel AF)" },
-      { label: "Sensor Resolution", value: "8192 × 4320 (8K DCI)" },
-      { label: "Frame Rates", value: "Up to 120 fps (4K)" },
-      { label: "Weight", value: "680 g (body only)" },
+      {
+        label: "Sensor Type",
+        value: "Full-frame CMOS (dual architecture for photo + cinema)",
+      },
+      {
+        label: "Sensor Resolution",
+        value: "~45 MP, 8192 × 5464; sensor size ~36 × 24 mm",
+      },
+      { label: "Frame Rates", value: "Up to 8K/60p, 4K/120p" },
+      { label: "Weight", value: "~0.82 kg (body with battery)" },
     ],
   },
   {
     id: "15",
     name: "PANASONIC EVA1",
     category: "Cameras",
-    image: "/images/panasonicEva1.png",
+    image: "/cameras/img_15.svg",
     specs: [
       { label: "Sensor Type", value: "Super 35mm CMOS" },
-      { label: "Sensor Resolution", value: "5720 × 3016 (approx. 5.7K)" },
+      { label: "Sensor Resolution", value: "5120 × 2880 approx (5.7K)" },
       { label: "Frame Rates", value: "Up to 240 fps" },
-      { label: "Weight", value: "1.2 kg (body only)" },
+      { label: "Weight", value: "~1.05 kg (body)" },
     ],
   },
   {
     id: "16",
     name: "PANASONIC LUMIX DC–S5 II",
     category: "Cameras",
-    image: "/images/lumixS5ii.png",
+    image: "/cameras/img_16.svg",
     specs: [
-      { label: "Sensor Type", value: "Full-frame CMOS, 6.2K 3:2" },
+      { label: "Sensor Type", value: "Full-frame CMOS, 35.6 × 23.8 mm" },
       { label: "Sensor Resolution", value: "6000 × 4000 (24.2 MP effective)" },
-      { label: "Frame Rates", value: "4K/120p, 6K/30p" },
-      { label: "Weight", value: "740 g (body only)" },
+      {
+        label: "Frame Rates",
+        value: "6K30p 4:2:0 10-bit, 4K60p 4:2:2 10-bit unlimited",
+      },
+      { label: "Weight", value: "Weight: ~0.66 kg (body only)" },
     ],
   },
   // --- LENSES ---

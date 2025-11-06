@@ -35,23 +35,16 @@ const Equipment = () => {
     setVisibleCount((prev) => prev + 8);
   };
 
-  // const handleCategoryClick = (category: string) => {
-  //   setActiveCategory(category);
-  //   setVisibleCount(8);
-  //   router.replace(`/?category=${encodeURIComponent(category)}#equipment`);
-  // };
-
   const handleCategoryClick = (category: string) => {
-    if (category === activeCategory) return; // no need if same category
+    if (category === activeCategory) return; 
     setLoading(true);
 
-    // fake delay 1-2 seconds
     setTimeout(() => {
       setActiveCategory(category);
       setVisibleCount(8);
       setLoading(false);
       router.replace(`/?category=${encodeURIComponent(category)}#equipment`);
-    }, 1500); // 1.5s skeleton
+    }, 1500); 
   };
 
   return (

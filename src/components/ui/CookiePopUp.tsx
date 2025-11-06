@@ -29,7 +29,7 @@ export const CookiePopUp = () => {
   }
 
   return (
-    <div className="shadow-hover bg-card fixed right-0 bottom-4 left-0 z-[500] mx-auto max-w-[600px] rounded-[20px] px-5 py-14 shadow-2xl sm:right-6 sm:bottom-6 sm:left-auto sm:px-8 sm:py-0">
+    <div className="shadow-hover bg-card fixed right-0 bottom-4 left-0 z-[500] mx-auto max-w-[600px] rounded-[20px] p-5 shadow-2xl sm:right-6 sm:bottom-6 sm:left-auto sm:px-8 sm:py-0">
       <svg
         width="18"
         height="18"
@@ -61,12 +61,12 @@ export const CookiePopUp = () => {
           We use cookies to improve your experience, analyze site traffic, and
           personalize content. By continuing to browse our site, you consent to
           our use of cookies. For more information, please review our{" "}
-          <a
+          {/* <a
             href="/terms"
             className="hover:text-primary underline duration-500"
           >
             Terms and Conditions
-          </a>
+          </a> */}
           ,{" "}
           <a
             href="/privacy"
