@@ -1,14 +1,21 @@
+import Image from "next/image";
 import Button from "./ui/Button";
 
 export default function Hero() {
   return (
-    <section
-      className=" md: mib-h-[700px] relative flex min-h-[500px] w-full items-center justify-center overflow-hidden bg-cover bg-center"
-      style={{
-        background:
-          "linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('/hero-bg.jpg') lightgray 50% / cover no-repeat",
-      }}
-    >
+    <section className="relative flex min-h-[500px] w-full items-center justify-center overflow-hidden md:min-h-[700px]">
+      {/* Background Image */}
+      <Image
+        src="/hero-bg.jpg"
+        alt="Hero background"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60" />
+
       {/* Content */}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-4 py-16 text-center sm:gap-12 sm:px-6 sm:py-24 lg:px-8">
         <div className="flex flex-col items-center gap-6 sm:gap-8">
@@ -24,7 +31,11 @@ export default function Hero() {
           </p>
         </div>
 
-        <Button variant="primary" size="lg" link="mailto:contact@lightshiftproductions.com">
+        <Button
+          variant="primary"
+          size="lg"
+          link="mailto:contact@lightshiftproductions.com"
+        >
           Request a Quote
         </Button>
       </div>
