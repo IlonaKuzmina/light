@@ -17,13 +17,14 @@ const bbhSansBartle = BBH_Sans_Bartle({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lightshiftproductions.com/"),
   title: "Light Shift - powering,productions, frame by frame",
   description: "Everything you need to bring your vision to life",
   icons: {
-    icon: "/icon0.svg",
-    apple: "/apple-icon.png",
+    icon: "https://lightshiftproductions.com/icon0.svg",
+    apple: "https://lightshiftproductions.com/apple-icon.png",
   },
-  manifest: "/manifest.json",
+  manifest: "https://lightshiftproductions.com/manifest.json",
 };
 
 export default function RootLayout({
@@ -35,6 +36,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="apple-mobile-web-app-title" content="LightShift" />
+        <meta
+          property="og:logo"
+          content="https://lightshiftproductions.com/logo.svg"
+        />
       </head>
       <body
         className={`${plusJakartaSans.variable} ${bbhSansBartle.variable} antialiased`}
